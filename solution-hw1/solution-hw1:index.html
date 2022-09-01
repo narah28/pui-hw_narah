@@ -1,15 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
   <meta charset="UTF-8">
-  <title>Page Title</title>
+  <link rel="stylesheet" href="css/style.css">
+  <title> Bun Bun bake shop</title>
   
   <body>
 
-    <h1>I am the solution to HW1! YAY Is this really updating?</h1>
+    <header>
+      <a href="./solution-hw1:index.html"> 
+        <img id ="logo" src="./assets/logo-01.svg" width="200" alt="bun bun bake shop logo" />
+      </a>
+      <hr>
+      <nav class="menu"> 
+        <div id="products"> <a class="menu" href="./solution-hw1:index.html"> <b> PRODUCTS </b></a> </div>
+        <br> <br>
+        <div id="cart"> <a class="menu" href="./shopping cart.html"> CART </a></div>
+      </nav>
+    </header>
+    <br> <br>
 
-    <p>
-        And I can link to <a href="./otherpage.html">other pages.......</a>
-    </p>
+    <p class="page_title"> Our hand-made cinnamon rolls </p>
+
+    <main> 
+      <div class="list">
+        <a class="product" href="./product detail.html">
+          <img src="./assets/original-cinnamon-roll.jpg"/>
+        <p class="product_titles"> Original cinnamon roll </p> </a> 
+        <p class="price"> $2.49 </p>
+      </div>
+
+      <br>
+
+      <div class="list">
+         <a class="product" href="./product detail.html">
+          <img src="./assets/apple-cinnamon-roll.jpg" />
+        <p class="product_titles"> Apple cinnamon roll </p> </a>
+        <p class="price"> $3.49 </p>
+      </div>
+
+      <br>
+      <div class="list">
+        <a class="product" href="./product detail.html">
+          <img src="./assets/raisin-cinnamon-roll.jpg" />
+        <p class="product_titles"> Raisin cinnamon roll </p> </a>
+        <p class="price"> $2.99 </p>
+      </div>
+
+      <br>
+
+      <div class="list">
+       <a class="product" href="./product detail.html">
+        <img src="./assets/walnut-cinnamon-roll.jpg"/>
+      <p class="product_titles"> Walnut cinnamon roll </p> </a> 
+      <p class="price"> $3.49 </p>
+     </div>
+      
+     <br>
+
+     <div class="list" id="chocolate_list">
+      <a class="product" id="chocolate_product" href="./product detail.html">
+       <img src="./assets/double-chocolate-cinnamon-roll.jpg"/>
+      <p class="product_titles"> Double-chocolate cinnamon roll </p> </a> 
+      <br>
+      <p class="price" id="chocolate_price"> $3.99</p>
+      </div>
+
+      <br>
+
+      <div class="list">
+      <a class="product" href="./product detail.html">
+        <img src="./assets/strawberry-cinnamon-roll.jpg" />
+      <p class="product_titles"> Strawberry cinnamon roll </p> </a>
+      <p class="price"> $3.99</p>
+      </div>
+
+    </main>
+       
 
   </body>
 </html>

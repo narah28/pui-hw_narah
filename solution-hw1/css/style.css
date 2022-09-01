@@ -1,0 +1,125 @@
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+hr {
+    height: 2px;
+    background-color: black;
+}
+
+nav, h2, .page_title {
+    text-align: center;
+}
+
+.product_titles, .price {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 0%;
+    margin-top: 3%;
+}
+
+/* for the page titles */
+.page_title {
+    font-size: 17px;
+}
+
+/* for all images except for the logo */
+img {
+    border: 2px solid black;
+}
+
+/* for the nav bar */
+#products {
+    background-color:  yellow;
+    display: inline-flex; /* got this from https://stackoverflow.com/questions/14310154/how-do-i-set-a-background-color-for-the-width-of-text-not-the-width-of-the-enti */
+}
+    
+
+/* got the a:link and a:visited code from: https://www.w3schools.com/html/html_links_colors.asp */
+.product:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+    display: inline-block;
+  }
+
+/* to make sure even when it's clicked, the style doesn't change */
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration:underline;
+}
+
+/* make sure logo doesn't have a border */
+#logo {
+    border: none;
+}
+
+/*
+section {
+    float: center;
+    margin-left: 43.5%;  For some reason, 43.5% seems more center in the 1200 dimension..
+} */
+
+
+
+a.menu:link {
+    font-size: 13px;
+    text-decoration: none;
+}
+
+
+.list {
+    margin: auto;
+    width: 160px;
+    height: 200px;
+}
+
+
+section {
+    margin: 0px;
+    border: black;
+}
+
+.price {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 154px;
+    position:relative;
+    bottom: 15px;
+   
+    
+}
+
+a.product {
+    width: 160px;
+    height: 200px;
+    position: relative;
+}
+
+.product img {
+    text-align: center;
+    margin: auto;
+    display: block;
+    justify-content: center;
+    width: 154px;
+}
+
+.product:hover {
+    background-color: yellow;
+    display: in-line block;
+}
+
+#chocolate_price {
+    position: relative;
+    bottom: 5px;
+}
+
+#chocolate_list {
+    margin: auto;
+    width: 160px;
+    height: 220px;
+}
