@@ -197,7 +197,7 @@ a#cart {
 }
 
 /*aligning to center */
-h2 {
+.shopping-cart-content {
     text-align: center;
 }
 
