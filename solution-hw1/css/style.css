@@ -1,18 +1,20 @@
-
+/* for the san serif font */
 html {
-    font-family: Arial, Helvetica, sans-serif;
-   
+    font-family: Arial, Helvetica, sans-serif;   
 }
 
+/* vertical line below the logo */
 hr {
     height: 2px;
     background-color: black;
 }
 
-nav, h2, .page_title {
+/*nav = PRODUCTS and CART, .page_title = "Our hand-made cinnamon rolls" */
+nav, .page_title {
     text-align: center;
 }
 
+/* arranging the product names and price */
 .product_titles, .price {
     font-size: 14px;
     color: black;
@@ -21,17 +23,17 @@ nav, h2, .page_title {
     margin-top: 3%;
 }
 
-/* for the page titles */
+/* font size for the page titles */
 .page_title {
     font-size: 17px;
 }
 
-/* for all images except for the logo */
-img {
+/* border for all images except for the logo */
+.product img {
     border: 2px solid black;
 }
 
-/* for the nav bar */
+/* to apply yellow background to PRODUCTS */
 #products {
     background-color:  yellow;
     display: inline-flex; /* got this from https://stackoverflow.com/questions/14310154/how-do-i-set-a-background-color-for-the-width-of-text-not-the-width-of-the-enti */
@@ -53,37 +55,26 @@ a:visited {
     text-decoration:underline;
 }
 
-/* make sure logo doesn't have a border */
-#logo {
-    border: none;
-}
-
-/*
-section {
-    float: center;
-    margin-left: 43.5%;  For some reason, 43.5% seems more center in the 1200 dimension..
-} */
-
-
-
+/* the nav link style */
 a.menu:link {
     font-size: 13px;
     text-decoration: none;
+    color: black;
 }
 
-
+/* the list of products style */
 .list {
     margin: auto;
     width: 160px;
     height: 200px;
 }
 
-
+/*
 section {
     margin: 0px;
     border: black;
 }
-
+*/
 .price {
     margin-top: 0%;
     margin-bottom: 0%;
