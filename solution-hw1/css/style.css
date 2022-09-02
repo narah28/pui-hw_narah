@@ -182,6 +182,7 @@ a#products {
     background-color: white;
 }
 
+/*cart image style */
 .cart-photo img {
     display: block;
     margin-left: auto;
@@ -190,14 +191,17 @@ a#products {
     border: 2px solid black;
 }
 
+/*cart bottom line */
 #cart-line {
     width: 45%;
 }
 
+/*aligning to center */
 section {
     text-align: center;
 }
 
+/*remove text style */
 .remove {
     font-size: 7pt;
     text-decoration: underline;
@@ -205,10 +209,12 @@ section {
     font-weight: bold;
 }
 
+/* product name and price text style */
 .cart-detail, .cart-price {
     font-size: 14pt;
 }
 
+/* checkout button style */
 #checkout-button {
     background: yellow;
     width: 9%;
