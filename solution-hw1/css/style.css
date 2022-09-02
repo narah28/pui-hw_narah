@@ -18,7 +18,7 @@ nav, .page_title {
 
 /* font size for the page titles */
 .page_title {
-    font-size: 17px;
+    font-size: 22px;
     font-kerning: normal;
 }
 
@@ -169,4 +169,53 @@ button {
     margin-right: 0px;
     margin-left: 20px;
     font-size: 13px;
+}
+
+/* ------------------------shopping cart specific---------------------------- */
+
+/* changing the background color of top menu links */
+a#cart {
+    background-color: yellow;
+}
+
+a#products {
+    background-color: white;
+}
+
+.cart-photo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+    border: 2px solid black;
+}
+
+#cart-line {
+    width: 45%;
+}
+
+section {
+    text-align: center;
+}
+
+.remove {
+    font-size: 7pt;
+    text-decoration: underline;
+    margin-top: 3pt;
+    font-weight: bold;
+}
+
+.cart-detail, .cart-price {
+    font-size: 14pt;
+}
+
+#checkout-button {
+    background: yellow;
+    width: 9%;
+    padding: 8px;
+    border: 3px solid black;
+    font-weight: bold;
+    vertical-align: middle;
+    font-size: 13px;
+    margin-right: 15pt;
 }
