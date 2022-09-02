@@ -20,6 +20,7 @@ nav, .page_title {
 .page_title {
     font-size: 22px;
     font-kerning: normal;
+    font-weight: normal;
 }
 
 /* to apply yellow background to PRODUCTS */
@@ -53,7 +54,10 @@ a:visited {
     margin-bottom: 0%;
     margin-top: 3%;
 }
-  
+
+a#products {
+    background-color: yellow;
+}
 
 /* got the a:link and a:visited code from: https://www.w3schools.com/html/html_links_colors.asp */
 .product:link {
@@ -178,10 +182,6 @@ a#cart {
     background-color: yellow;
 }
 
-a#products {
-    background-color: white;
-}
-
 /*cart image style */
 .cart-photo img {
     display: block;
@@ -197,7 +197,7 @@ a#products {
 }
 
 /*aligning to center */
-section {
+h2 {
     text-align: center;
 }
 
@@ -212,6 +212,7 @@ section {
 /* product name and price text style */
 .cart-detail, .cart-price {
     font-size: 14pt;
+    font-weight:normal;
 }
 
 /* checkout button style */
