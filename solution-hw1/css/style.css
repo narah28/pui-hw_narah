@@ -1,3 +1,5 @@
+/* ----------------------------common style--------------------------------- */
+
 /* for the san serif font */
 html {
     font-family: Arial, Helvetica, sans-serif;   
@@ -14,40 +16,17 @@ nav, .page_title {
     text-align: center;
 }
 
-/* arranging the product names and price */
-.product_titles, .price {
-    font-size: 14px;
-    color: black;
-    text-decoration: none;
-    margin-bottom: 0%;
-    margin-top: 3%;
-}
-
 /* font size for the page titles */
 .page_title {
     font-size: 17px;
+    font-kerning: normal;
 }
 
 /* to apply yellow background to PRODUCTS */
 #products {
     background-color:  yellow;
-    display: inline-flex; /* got this from https://stackoverflow.com/questions/14310154/how-do-i-set-a-background-color-for-the-width-of-text-not-the-width-of-the-enti */
-}
-    
-
-/* got the a:link and a:visited code from: https://www.w3schools.com/html/html_links_colors.asp */
-.product:link {
-    color: black;
-    background-color: transparent;
-    text-decoration: underline;
-    display: inline-block;
-  }
-
-/* to make sure even when it's clicked, the style doesn't change */
-a:visited {
-    color: black;
-    background-color: transparent;
-    text-decoration:underline;
+    display: inline-flex; /* got this from:border:
+                            https://stackoverflow.com/questions/14310154/how-do-i-set-a-background-color-for-the-width-of-text-not-the-width-of-the-enti */
 }
 
 /* the nav link style */
@@ -56,6 +35,33 @@ a.menu:link {
     text-decoration: none;
     color: black;
 }
+
+/* to make sure even when it's clicked, the style doesn't change */
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration:underline;
+}
+
+/* ------------------------gallery page specific----------------------------- */
+
+/* arranging the product names and price */
+.product_titles, .price {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 0%;
+    margin-top: 3%;
+}
+  
+
+/* got the a:link and a:visited code from: https://www.w3schools.com/html/html_links_colors.asp */
+.product:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+    display: inline-block;
+  }
 
 /* the list of products style */
 .list {
@@ -112,4 +118,57 @@ a#chocolate_product {
     width: 160px;
     height: 210px;
     position: relative;
+}
+
+/* ----------------------product detail specific-------------------------- */
+
+.product_photo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    border: 2px solid black;
+}
+
+/* the text below the product img */
+.product_info {
+    width: 210px;
+    height: 500px;
+    display: block;
+    margin: auto;
+}
+
+/* dropbox style */
+select {
+    background: white;
+    width: 100%;
+    height: 100%;
+    color: black;
+    cursor: pointer;
+    border: 2px solid black;
+    padding: 3%;
+    margin-top: 4%;
+    font-size: 13pt;
+}
+
+/* adjusting the price position */
+#product-price {
+    padding-left: 15pt;   
+    font-weight: bold; 
+    font-size: 13px;
+}
+
+button {
+    background: yellow;
+    width: 65%;
+    padding: 8px;
+    border: 3px solid black;
+    font-weight: bold;
+    vertical-align: middle;
+    margin-right: 0px;
+    margin-left: 20px;
+    font-size: 13px;
+
+    
+
 }

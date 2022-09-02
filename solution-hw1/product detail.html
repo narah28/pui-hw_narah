@@ -1,15 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
   <title> Product Detail </title>
   
   <body>
+    <header>
+      <a href="./solution-hw1:index.html"> 
+        <img id ="logo" src="./assets/logo-01.svg" width="300" alt="bun bun bake shop logo" />
+      </a>
+      <hr>
+      <nav class="menu"> 
+        <div id="products"> <a class="menu" href="./solution-hw1:index.html"> <b> PRODUCTS </b></a> </div>
+        <br> <br>
+        <div id="cart"> <a class="menu" href="./shopping cart.html"> CART </a></div>
+      </nav>
+    </header>
+    <br> <br>
 
-    <h1>Other Page</h1>
+    <p class="page_title"> Original cinnamon roll </p>
 
-    <p>
-        Hello!
-    </p>
+    <br>
+
+    <main> 
+      <div class="product_photo">
+        <img src="./assets/original-cinnamon-roll.jpg" alt="original cinammon roll"/>  
+      </div>
+
+      <div class="product_info"> 
+        <p class="description"> Customize our delicious, hand-made cinammon roll to your liking! </p>
+        
+        <br>
+        <div class="glazing-dropbox">
+        <label for="glazing"> Glazing: </label>
+          <br> 
+          <select name="glazing-options"> 
+            <option value="Keep-original"> Keep original </option>
+            <option value="Sugar-milk"> Sugar milk </option>
+            <option value="Vanilla-milk"> Vanilla milk </option>
+            <option value="Double-chocolate"> Double chocolate </option> 
+          </select>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="size-dropbox">
+        <label for="size"> Pack size: </label>
+          <br> 
+          <select name="size-options"> 
+            <option value="1"> 1 </option>
+            <option value="3"> 3 </option>
+            <option value="6"> 6 </option>
+            <option value="12"> 12 </option> 
+          </select>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <p id="product-price"> $2.49        
+          <button type="button"> Add to Cart </button>
+        </p>  
+      </div>
+
+
 
   </body>
 </html>
