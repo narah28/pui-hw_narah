@@ -60,7 +60,7 @@ a:visited {
     color: black;
     background-color: transparent;
     text-decoration: underline;
-    display: inline-block;
+    display: inline-block
   }
 
 /* the list of products style */
@@ -99,7 +99,7 @@ a.product {
 /* link style when hovering */
 .product:hover {
     background-color: yellow;
-    display:in-line block;
+    display: block;
 }
 
 /* doulbe-chocolate cinnamon roll has different height, so made a separate one */
