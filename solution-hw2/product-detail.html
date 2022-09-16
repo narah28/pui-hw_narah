@@ -6,31 +6,44 @@
   
   <body>
     <header>
-      <a href="./solution-hw2:index_home.html"> 
-        <img id ="logo" src="./assets/logo-01.svg" width="300" alt="bun bun bake shop logo" />
-      </a>
-      <hr>
-      <nav class="menu"> 
-        <div> <a class="menu" id="products" href="./solution-hw2:index.html"> <b> PRODUCTS </b></a> </div>
-        <br>
-        <div> <a class="menu" href="./shopping-cart.html"> CART </a></div>
-      </nav>
-    </header>
-    <br> <br>
+      <div class="topHeader">
 
-    <p class="page_title"> Original cinnamon roll </p>
+        <div class="top_left">
+          <a href="./solution-hw2:index.html"> 
+          <img src="./assets/logo-01.svg" alt="bun bun bake shop logo" />
+          </a>
+        </div>
+      
+        <div class="top_right">
+          <div class="menu"> 
+            <div> <a class="menu" href="./shopping-cart.html"> CART </a></div>
+            <div> <a class="menu" id="products" href="./solution-hw2:index.html"> <b> PRODUCTS </b></a> </div>
+            <br> 
+          </div>
+          <div class="line">
+          <hr>
+          </div>
+          <p class="page_title"> Original cinnamon roll </p>
+        </div>   
+      </div>
+    </header>
 
     <br>
 
     <main> 
+      <div class="content">
+
       <div class="product_photo">
         <img src="./assets/original-cinnamon-roll.jpg" alt="original cinammon roll"/>  
       </div>
+      
 
       <div class="product_info"> 
         <p class="description"> Customize our delicious, hand-made cinammon roll to your liking! </p>
         
         <br>
+        <br>
+
         <div class="glazing-dropbox">
         <label for="glazing" > Glazing: </label>
           <br> 
@@ -42,6 +55,7 @@
           </select>
         </div>
 
+        <br>
         <br>
         <br>
 
@@ -61,10 +75,14 @@
         <br>
         <br>
 
-        <p id="product-price"> $2.49        
+        <div class="productPriceCart"> 
+          <p> $2.49 </p>        
           <button type="button"> Add to Cart </button>
-        </p>  
+        </div>  
+
       </div>
+    
+    </div>
     </main>
 
   </body>
