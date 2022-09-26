@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="javascript/hw4.js" type="text/javascript" defer></script>
+  <title> Product Detail </title>
+  
+  <body>
+    <header>
+      <div class="topHeader">
+
+        <div class="top_left">
+          <a href="./solution-hw4:index.html"> 
+          <img src="./assets/logo-01.svg" alt="bun bun bake shop logo" />
+          <script defer src="json/rollsData.js"></script>
+
+          </a>
+        </div>
+      
+        <div class="top_right">
+          <div class="menu"> 
+            <div> <a class="menu" href="./shopping-cart.html"> CART </a></div>
+            <div> <a class="menu" id="products" href="./solution-hw4:index.html"> <b> PRODUCTS </b></a> </div>
+            <br> 
+          </div>
+          <div class="line">
+          <hr>
+          </div>
+          <p class="page_title"> Original cinnamon roll </p>
+        </div>   
+      </div>
+    </header>
+
+    <br>
+
+    <main> 
+
+
+
+
+
+      <div class="content">
+
+      <div class="product_photo">
+        <img src="./assets/original-cinnamon-roll.jpg" alt="original cinammon roll"/>  
+      </div>
+      
+
+      <div class="product_info"> 
+        <p class="description"> Customize our delicious, hand-made cinammon roll to your liking! </p>
+        
+        <br>
+        <br>
+
+        <div class="glazing-dropbox">
+        <label for="glazing" > Glazing: </label>
+          <br> 
+          <select name="glazing-options" id="glazing" onchange='glazingChange(this)'> 
+          </select>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="size-dropbox">
+        <label for="size"> Pack size: </label>
+          <br> 
+          <select name="size-options" id="size" onchange='sizeChange(this)'> 
+          </select>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="productPriceCart"> 
+          <p id="cartTotalPrice"> $2.49 </p>        
+          <button type="button"> Add to Cart </button>
+        </div>  
+
+      </div>
+    
+    </div>
+    </main>
+
+  </body>
+</html>

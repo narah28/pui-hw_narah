@@ -1,14 +1,14 @@
 // for storing glazing option names/values 
 let allGlazing = [
-]
+];
 
 // for storing pack size option names/values
 let allPack = [
-]
+];
 
 // finding the glazing select element in html
-let selectElementGlazing = document.querySelector('#glazing')
-let selectElementSize = document.querySelector('#size')
+let selectElementGlazing = document.querySelector('#glazing');
+let selectElementSize = document.querySelector('#size');
 
 // adding the glazing options to the allGlazing array & allPack array
 let addGlazingOptions = [
@@ -23,7 +23,7 @@ let addGlazingOptions = [
 
     {glazingOption: 'Double chocolate',
      price: 1.50},
-]
+];
 
 let addPackOptions = [
     {packOptions: '1',
@@ -37,7 +37,7 @@ let addPackOptions = [
 
     {packOptions: '12',
      price: 10},
-]
+];
 
 //pushing the addGlazingOptions array to the allGlazing array one by one
 allGlazing.push(addGlazingOptions[0], addGlazingOptions[1], addGlazingOptions[2], addGlazingOptions[3]);
@@ -66,9 +66,9 @@ for (let i = 0; i < allPack.length; i++) {
 }
 
 // calling the base price, getting rid of the dollar sign, and changing the type to number
-let basePrice = document.querySelector('#cartTotalPrice').innerText
+let basePrice = document.querySelector('#cartTotalPrice').innerText;
 //console.log(basePrice)
-basePrice = Number(basePrice.substring(1)) //just getting rid of the dollar sign and changing it to a number
+basePrice = Number(basePrice.substring(1)); //just getting rid of the dollar sign and changing it to a number
 //console.log(basePrice)
 //console.log(typeof basePrice)
 
@@ -79,8 +79,8 @@ function glazingChange(element) {
     let updatedPrice = Number((priceChange + basePrice) * packChange).toFixed(2);
     //console.log(updatedPrice)
     //console.log(typeof updatedPrice)
-    let totalPrice = document.querySelector('#cartTotalPrice')
-    totalPrice.innerText = "$" + updatedPrice
+    let totalPrice = document.querySelector('#cartTotalPrice');
+    totalPrice.innerText = "$" + updatedPrice;
 }
 
 //for when the user clicks pack size option
@@ -89,8 +89,8 @@ function sizeChange(element) {
     const priceChange = Number(document.querySelector('#glazing').value);
     let updatedPrice = Number((priceChange + basePrice) * packChange).toFixed(2);
     //console.log(updatedPrice)
-    let totalPrice = document.querySelector('#cartTotalPrice')
-    totalPrice.innerText = "$" + updatedPrice
+    let totalPrice = document.querySelector('#cartTotalPrice');
+    totalPrice.innerText = "$" + updatedPrice;
 }
 
 
