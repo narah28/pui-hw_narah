@@ -45,7 +45,15 @@ html {
 }
 
 /* font size for the page titles */
-.page_title {
+#productPageTitle { 
+    font-size: 24px;
+    font-kerning: normal;
+    font-weight: normal;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.page_title { 
     font-size: 24px;
     font-kerning: normal;
     font-weight: normal;

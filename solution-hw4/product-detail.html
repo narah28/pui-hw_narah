@@ -2,9 +2,12 @@
 <html lang="en">
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/style.css">
+  <script src="json/rollsData.js" type="text/javascript" defer></script>
   <script src="javascript/hw4.js" type="text/javascript" defer></script>
+  
   <title> Product Detail </title>
   
+
   <body>
     <header>
       <div class="topHeader">
@@ -12,7 +15,7 @@
         <div class="top_left">
           <a href="./solution-hw4:index.html"> 
           <img src="./assets/logo-01.svg" alt="bun bun bake shop logo" />
-          <script defer src="json/rollsData.js"></script>
+  
 
           </a>
         </div>
@@ -26,7 +29,7 @@
           <div class="line">
           <hr>
           </div>
-          <p class="page_title"> Original cinnamon roll </p>
+          <p id="productPageTitle"></p> <!-- HW4: deleted the texts -->
         </div>   
       </div>
     </header>
@@ -34,18 +37,12 @@
     <br>
 
     <main> 
-
-
-
-
-
       <div class="content">
 
       <div class="product_photo">
-        <img src="./assets/original-cinnamon-roll.jpg" alt="original cinammon roll"/>  
+        <img src="" alt=""/>  <!-- HW4: deleted the texts -->
       </div>
       
-
       <div class="product_info"> 
         <p class="description"> Customize our delicious, hand-made cinammon roll to your liking! </p>
         
@@ -76,8 +73,8 @@
         <br>
 
         <div class="productPriceCart"> 
-          <p id="cartTotalPrice"> $2.49 </p>        
-          <button type="button"> Add to Cart </button>
+          <p id="cartTotalPrice"> </p>        
+          <button type="button" onclick='addItemsToCart()'> Add to Cart </button> <!-- HW4: added onclick -->
         </div>  
 
       </div>
