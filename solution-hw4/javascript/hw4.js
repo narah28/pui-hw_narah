@@ -8,7 +8,6 @@ let cart = [
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const rolltype = params.get('roll');
-    console.log("This is the rolltype: " + rolltype);
 
 
 /* heading of each detail page */
