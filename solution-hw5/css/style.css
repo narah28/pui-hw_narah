@@ -1,0 +1,314 @@
+/* ----------------------------common style--------------------------------- */
+
+/* for the san serif font */
+html {
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+/* the top header(logo, nav menu, line, title) div */
+.topHeader {
+    display: flex;
+}
+
+/* just the logo arrangement */
+.top_left {
+    flex: 1;
+}
+
+/* logo adjustment */
+.top_left img {
+    padding: 20px;
+    padding-bottom: 0px;    
+}
+
+/* the top_right div (nav menu, line, title) */
+.top_right {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+
+/* to align the nav menu to the right and change the order */
+.menu {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* for the spacing between the nav menus */
+.menu div {
+    padding: 20px;
+}
+
+/* the line */
+.line hr {
+    border: 2px solid black;
+}
+
+/* font size for the page titles */
+#productPageTitle { 
+    font-size: 24px;
+    font-kerning: normal;
+    font-weight: normal;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.page_title { 
+    font-size: 24px;
+    font-kerning: normal;
+    font-weight: normal;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+/* the nav link style */
+a.menu:link {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+/* to make sure even when it's clicked, the style doesn't change */
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration:underline;
+}
+
+/* ------------------------gallery page specific----------------------------- */
+
+.productList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* arranging the product names and price */
+.product_titles, .price {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 0%;
+    margin-top: 3%;
+}
+
+/* background color of nav menu "products" */
+a#products {
+    background-color: yellow;
+}
+
+/* got the a:link and a:visited code from: https://www.w3schools.com/html/html_links_colors.asp */
+.product:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+    display: inline-block;
+  }
+
+.productListTop, .productListBottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* the list of products style */
+div .list {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* highlights each product when hovered */
+.list:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* setting the dimension of product image and title area */
+a.product {
+    flex-wrap: wrap;
+    width: 160px;
+}
+
+/* product image style */
+.product img {
+    width: 154px;
+    border: 2px solid black;
+}
+
+.size-dropbox button {
+    justify-content: flex-end;
+
+}
+
+
+
+/* ----------------------product detail specific-------------------------- */
+
+/* all content below the header */
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 55px;
+}
+
+/* setting the product photo area and alignment */
+.product_photo {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+/* setting the image property within the .product_photo box */
+.product_photo img{
+    width: 100%;
+    border: 2px solid black;   
+}
+
+/* setting the righthand side of the .content box */
+.product_info {
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+    font-size: 20px;
+}
+
+/* dropbox style */
+select {
+    background: white;
+    width: 100%;
+    height: 100%;
+    color: black;
+    cursor: pointer;
+    border: 2px solid black;
+    padding: 2%;
+    margin-top: 1%;
+    font-size: 13pt;
+}
+
+/* adjusting the price position */
+
+.productPriceCart {
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+}
+
+.productPriceCart p {
+    flex: 35%;
+    text-align: center;  
+}
+
+/* button styling */
+button {
+    background: yellow;
+    width: 65%;
+    border: 3px solid black;
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+
+/* ------------------------shopping cart specific---------------------------- */
+
+/* changing the background color of top menu links */
+a#cart {
+    background-color: yellow;
+}
+
+
+/* this is for the div that contains all the info below the shopping cart title */
+.shoppingCart {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+/* the first row of the cart */
+.cartItem1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* the second row of the cart */
+.cartItem2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* the text (product name, glazing/size option) */
+.cart-detail {
+    flex-grow: 2.5;
+    padding-left: 5%;
+    font-size: 14pt;
+    font-weight:normal;
+}
+
+/* to give some space right of the price text */
+.cart-price, .cartPrice {
+    padding-right: 5%;
+    font-size: 14pt;
+    font-weight:normal;
+}
+
+/*cart image style */
+.cart-photo img {
+    border: 3px solid black;
+    width: 100%;
+}
+
+/* setting the width of the .cart-photo div */
+.cart-photo {
+    width: 15%;
+}
+
+/*aligning to center */
+.shopping-cart-content {
+    text-align: center;
+}
+
+/*remove text style */
+.removeText p {
+    font-size: 7pt;
+    text-decoration: underline;
+    margin-top: 0pt;
+    font-weight: bold;
+}
+
+/* total price + button flexbox */
+.cartPrice {
+    display: flex;
+    justify-content: flex-end;
+    justify-self: flex-end;
+}
+
+/* for the text "Total:" */
+.textTotal {
+    flex-grow: 1.5;
+    padding-left: 21%;
+}
+
+/* checkout button style */
+#checkout-button {
+    background: yellow;
+    width: 15%;
+    padding: 8px;
+    border: 3px solid black;
+    font-weight: bold;
+    vertical-align: middle;
+    font-size: 16px;  
+}
