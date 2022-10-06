@@ -127,18 +127,9 @@ function sizeChange(element) {
 
 /* ------------------- ADD TO CART (CONSOLE PART) --------------------- */
 /* HW4: this is a newly added part*/
-/* defining the class Roll */
-class Roll {
-    constructor(rollType, rollGlazing, packSize, basePrice) {
-        this.type = rollType;
-        this.glazing =  rollGlazing;
-        this.size = packSize;
-        this.basePrice = basePrice;
-    }
-}
 
-/* adding items to the cart array : got the selectElement code from https://stackoverflow.com/questions/5913/getting-the-text-from-a-drop-down-box */
-function addItemsToCart() {
+/* adding items to the cart array : got the selectElement code from https://stackoverflow.com/questions/5913/getting-the-text-from-a-drop-down-box 
+ */function addItemsToCart() {
     let currentGlazing = selectElementGlazing.options[selectElementGlazing.selectedIndex].text;
     let currentSize = selectElementSize.options[selectElementSize.selectedIndex].text;
     let addToCart = new Roll(rolltype, currentGlazing, currentSize, rolls[rolltype].basePrice);

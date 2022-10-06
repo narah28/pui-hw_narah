@@ -228,27 +228,20 @@ a#cart {
 
 
 /* this is for the div that contains all the info below the shopping cart title */
-.shoppingCart {
+#newRollList {
     display: flex;
     flex-direction: column;
     padding-top: 40px;
 }
 
-/* the first row of the cart */
-.cartItem1 {
+/* display of each item in the cart*/
+.cartItem {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-/* the second row of the cart */
-.cartItem2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
 
 /* the text (product name, glazing/size option) */
 .cart-detail {
@@ -258,17 +251,11 @@ a#cart {
     font-weight:normal;
 }
 
-/* to give some space right of the price text */
+/* to give some space right of the price texts */
 .cart-price, .cartPrice {
     padding-right: 5%;
     font-size: 14pt;
     font-weight:normal;
-}
-
-/*cart image style */
-.cart-photo img {
-    border: 3px solid black;
-    width: 100%;
 }
 
 /* setting the width of the .cart-photo div */
@@ -276,17 +263,25 @@ a#cart {
     width: 15%;
 }
 
-/*aligning to center */
-.shopping-cart-content {
-    text-align: center;
+/*cart image style */
+.rollPhoto {
+    border: 3px solid black;
+    width: 100%;
 }
 
-/*remove text style */
-.removeText p {
+/* for the remove text button (text style) */
+.remove-button p {
     font-size: 7pt;
     text-decoration: underline;
     margin-top: 0pt;
     font-weight: bold;
+}
+
+.remove-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* total price + button flexbox */

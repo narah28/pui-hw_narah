@@ -2,7 +2,9 @@
 <html lang="en">
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/style.css">
-  <script src="javascript/hw5.js" type="text/javascript" defer></script>
+  <script src="json/rollsData.js" type="text/javascript" defer></script> <!-- for hw5 -->
+  <script src="javascript/hw5.js" type="text/javascript" defer></script> 
+  <script src="javascript/cart.js" type="text/javascript" defer></script> <!-- for hw5 -->
 
   <title>Shopping Cart</title>
   
@@ -17,60 +19,65 @@
         </div>
       
         <div class="top_right">
+
           <div class="menu"> 
+              
             <div> <a class="menu" id="cart" href="./shopping-cart.html"> <b>CART</b> </a></div>
             <div> <a class="menu" href="./solution-hw5:index.html"> PRODUCTS </a> </div>
+            
             <br> 
+
           </div>
+
           <div class="line">
             <hr>
           </div>
+          
           <p class="page_title"> Shopping cart </p>
 
           <br>
           <br>
 
           <div class="shoppingCart">
-            <div class="cartItem1">
-              <div class="cart-photo">
-                <img src="./assets/original-cinnamon-roll.jpg" alt="original cinammon roll"/>  
-              </div>
+
+            <div id="newRollList">
+
+             <template id="cartItem-template">
+              <div class="cartItemList">
+              
+                <div class="cartItem">
+
+                  <div class="cart-photo">
+                   <img class="rollPhoto" src="" alt=""/>  
+                  </div>
       
-              <div class="cart-detail"> 
-                Original Cinnamon Roll <br> 
-                Glazing: Keep original <br>
-                Pack Size: 1
-              </div>
+                  <div class="cart-detail"> 
+                    <div id="roll-name">
+                    <br> 
+                    </div>
+                    <div id="roll-glazing">
+                     <br>
+                    </div>
+                    <div id="roll-packing">
+                    </div>
+                  </div>
       
-              <p class="cart-price"> $2.49 </p>
+                  <p class="cart-price">  </p>
+
+                </div> 
+
+                <div class="remove-button">
+                  <p type="remove"> Remove </p> <!-- kept it as text that functions as a button -->
+                </div>
+
+              </div>       
+             </template>
           
             </div>
 
-          <div class="removeText">
-            <p> Remove </p>
-          </div>
-
-          <br>
-          <br>
-
-          <div class="cartItem2">
-            <div class="cart-photo">
-              <img src="./assets/double-chocolate-cinnamon-roll.jpg" alt="double chocolate cinnamon roll"/>  
-            </div>
-      
-            <div class="cart-detail">
-              Double Chocolate Cinnamon Roll <br>
-              Glazing: Sugar milk <br>
-              Pack Size: 6
-            </div>
-      
-            <p class="cart-price"> $27.45 </p>
-      
             <br>
-          </div>
-
-          <div class="removeText">
-            <p> Remove </p>
+            <br>
+            
           </div>
 
           <div class="line">
@@ -79,16 +86,16 @@
           
           <div class="cartPrice">
             <p class="textTotal"> Total:  </p>
-            <p class="textPrice"> $29.94</p>
+            <p id="totalPrice"> </p>
           </div>
 
           <br>
+
           <div class="cartPrice">
             <button type="button" id="checkout-button">Checkout </button>
           </div>
 
-         </div> 
-        </div>   
+         </div>   
         
       </div>
     </div>
