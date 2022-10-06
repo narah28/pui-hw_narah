@@ -69,7 +69,7 @@ function updateElement(newRoll) {
     const rollRemoveElement = newRoll.element.querySelector('.removeText');
 
 /*  console.log("HERE", rollImageElement);
- */ rollImageElement.src = '../assets/' + rolls[newRoll.type].imageFile;
+ */ rollImageElement.src = './assets/' + rolls[newRoll.type].imageFile;
     rollImageElement.alt = newRoll.type + ' Cinnamon Roll';
 /*  console.log(rollImageElement.src);
  */    
