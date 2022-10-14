@@ -32,7 +32,10 @@ class Roll {
     }
 }
 /* so that the below part only runs when on the shopping-cart page */
-if (window.location.pathname == '/shopping-cart.html') {
+
+const checkTitle = document.querySelector('title');
+console.log(checkTitle)
+if (checkTitle.innerText=='Shopping Cart') {
 
 /* adding new objects to the class Roll */
 function addNewRoll (rollType, rollGlazing, packSize, basePrice) {
