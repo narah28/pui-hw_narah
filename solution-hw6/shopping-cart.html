@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="json/rollsData.js" type="text/javascript" defer></script> <!-- for hw5 -->
+  <script src="javascript/hw6.js" type="text/javascript" defer></script> 
+  <script src="javascript/cart.js" type="text/javascript" defer></script> <!-- for hw5 -->
+
+  <title>Shopping Cart</title>
+  
+  <body class="shoppingCartPage">
+    <div>
+      <div class="topHeader">
+
+        <div class="top_left">
+          <a href="./solution-hw6:index.html"> 
+          <img src="./assets/logo-01.svg" alt="bun bun bake shop logo" />
+          </a>
+        </div>
+      
+        <div class="top_right">
+
+          <div class="menu"> 
+              
+            <div> <a class="menu" id="cart" href="./shopping-cart.html"> <b>CART</b> </a></div>
+            <div> <a class="menu" href="./solution-hw6:index.html"> PRODUCTS </a> </div>
+            
+            <br> 
+
+          </div>
+
+          <div class="line">
+            <hr>
+          </div>
+          
+          <p class="page_title"> Shopping cart </p>
+
+          <br>
+          <br>
+
+          <div class="shoppingCart">
+
+            <div id="newRollList">
+
+             <template id="cartItem-template">
+              <div class="cartItemList">
+              
+                <div class="cartItem">
+
+                  <div class="cart-photo">
+                   <img class="rollPhoto" src="" alt=""/>  
+                  </div>
+      
+                  <div class="cart-detail"> 
+                    <div id="roll-name">
+                    <br> 
+                    </div>
+                    <div id="roll-glazing">
+                     <br>
+                    </div>
+                    <div id="roll-packing">
+                    </div>
+                  </div>
+      
+                  <p class="cart-price">  </p>
+
+                </div> 
+
+                <div class="remove-button">
+                  <p type="remove"> Remove </p> <!-- kept it as text that functions as a button -->
+                </div>
+
+              </div>       
+             </template>
+          
+            </div>
+
+            <br>
+            <br>
+            
+          </div>
+
+          <div class="line">
+            <hr>
+          </div>
+          
+          <div class="cartPrice">
+            <p class="textTotal"> Total:  </p>
+            <p id="totalPrice"> </p>
+          </div>
+
+          <br>
+
+          <div class="cartPrice">
+            <button type="button" id="checkout-button">Checkout </button>
+          </div>
+
+         </div>   
+        
+      </div>
+    </div>
+
+    <br>
+
+  </body>
+</html>
