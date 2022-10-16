@@ -1,3 +1,4 @@
+let cart = [];
 
 function retrieveFromLocalStorage() {
     const stringCart  = localStorage.getItem('storedCart');
