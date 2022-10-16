@@ -1,5 +1,3 @@
-/* ------------------- THIS SECTION IS ENTIRELY NEW FOR HW4 --------------------- */
-
 let cart=[];
 
 if (localStorage.getItem('storedCart') != null) {
