@@ -1,9 +1,13 @@
 let cart=[];
 
 if (localStorage.getItem('storedCart') != null) {
+    console.log("ITS NOT NULL")
     retrieveFromLocalStorage();
   }
-else {
+else { 
+    console.log("ITS NULL")
+    let cart=[];
+    console.log(cart)
 };
 
 /* getting the rolltype */
@@ -137,12 +141,14 @@ function saveToLocalStorage() {
     const stringCart = JSON.stringify(cart);
     console.log(stringCart);
     localStorage.setItem('storedCart', stringCart); 
+    console.log(localStorage);
 }
 
 
 
 function retrieveFromLocalStorage() {
     const stringCart  = localStorage.getItem('storedCart');
+    console.log(stringCart);
     const savedCart= JSON.parse(stringCart);
     console.log(savedCart);
     cart = savedCart;
@@ -155,8 +161,11 @@ function addItemsToCart() {
     let currentSize = selectElementSize.options[selectElementSize.selectedIndex].text;
     let addToCart = new Roll(rolltype, currentGlazing, currentSize, rolls[rolltype].basePrice);
  
+    saveToLocalStorage();
+    
+    console.log(addToCart)
     retrieveFromLocalStorage();
-
+    
     cart.push(addToCart);
     console.log(cart);
 
