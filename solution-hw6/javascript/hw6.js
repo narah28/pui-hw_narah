@@ -4,9 +4,7 @@ if (localStorage.getItem('storedCart') != null) {
     retrieveFromLocalStorage();
   }
 else {
-    let cart = [
-    ]
-}
+};
 
 /* getting the rolltype */
 const queryString = window.location.search;
