@@ -1,5 +1,3 @@
-let cart = [];
-
 function retrieveFromLocalStorage() {
     const stringCart  = localStorage.getItem('storedCart');
     const savedCart= JSON.parse(stringCart);
