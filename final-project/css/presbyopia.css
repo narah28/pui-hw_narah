@@ -1,0 +1,10 @@
+html {
+    background-color: black;
+    color: #FFFAF2;
+    font-family: 'Inter';
+    margin: 2%;
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 1.5;
+    position: relative;
+}

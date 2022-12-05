@@ -1,0 +1,123 @@
+html {
+    background-color: black;
+    color: #FFFAF2;
+    font-family: 'Inter';
+    margin: 2%;
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 1.5;
+    position: relative;
+}
+
+.titleText {
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-top: 5pt;
+}
+
+#topElements, #bottomElements {
+    display: flex;
+    align-items: flex-start stretch;
+    height: 288px;
+}
+
+#titleText {
+    flex-grow:0.5;
+}
+
+#titleText p {
+    margin-top: 10pt;
+}
+
+.menuButtons {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 2.5;
+    margin-top: 10pt;
+}
+
+#presbyopia,#diabeticRetinopathy,#macularDegeneration {
+    flex-grow: 1;
+    flex-basis: 33%;
+    display: flex;
+    margin-top: 15pt;
+    margin-left: 2%;
+    justify-content: center;
+}
+
+.buttons {
+    border: solid #FFFAF2 1px;
+    background-color: black;
+    color: #FFFAF2;
+    padding: 16px 32px;
+    border-radius: 15px;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 100%;
+    
+}
+
+.buttons:hover {
+    background-color: #FFFAF2;
+    color: black;
+}
+
+#explanationText {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#expText {
+    width: 25%;
+}
+
+#byMe {
+    font-size: 10pt;
+    font-weight: lighter;
+    align-self: flex-end;
+    margin-bottom: 3px;
+}
+
+#eye {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+#bottomElements {
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+#cataract, #tunnelVision, #centralVisionLoss, #glaucoma, #totalBlindness {
+    flex-grow: 1;
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+}
+
+#bottomLine {
+    margin: 0;
+}
+
+/* for the rotated elements */
+#cataract {
+    transform: rotate(-20deg);
+    margin-right: 30px;
+}
+
+#totalBlindness button {
+    transform: rotate(20deg);
+    margin-left: 30px;
+    margin-bottom: 45px;
+}
