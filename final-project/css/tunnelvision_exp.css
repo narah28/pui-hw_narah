@@ -1,0 +1,104 @@
+html {
+    background-color: black;
+    color: #FFFAF2;
+    font-family: 'Inter';
+    margin: 2%;
+    font-size: 18pt;
+    font-weight: lighter;
+    line-height: 1.5;
+    position: relative;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+#tvTopElements {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+
+.titleText {
+    font-size: 100px;
+    font-weight: bold;
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+    line-height: 1.4;
+    color:#FFFAF2;
+}
+
+.titleText p {
+    margin: 0;
+}
+
+#overview {
+    margin-top: 10pt;
+    margin-left: 30%;
+    font-size: 24px;
+    font-weight: bold;
+    flex-grow: 2;
+}
+
+#sub {
+    font-size: 20px;
+    font-weight:lighter;
+    width: 80%;
+}
+
+/* for the illustration of the eye */
+
+#eye {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+#tvBottomElements {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.explanationText {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+}
+
+#occurence {
+    width: 16%;
+    font-size: 42px;
+    font-weight: bolder;
+    margin-top: 0;
+}
+
+#occurence p {
+    margin-top: 0;
+}
+
+/* medical diagnosis required part */
+
+
+
+
+/* for the bottom navigation bar */
+
+#bottomBarMenu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1%;
+  }
+
+#bottomBarMenu a {
+    color:#FFFAF2;
+    font-size: 16px;
+}
+
+#footerLine{
+    width: 100%;
+}

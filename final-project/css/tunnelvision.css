@@ -1,0 +1,96 @@
+html, body {
+    color: #FFFAF2;
+    font-family: 'Inter';
+    margin: 2%;
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 1.5;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+    overflow: hidden;
+}
+
+body * {
+    z-index: 20;
+    color: #000;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+#content {
+    /* width: 100%; */
+    height: 100vh;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  
+#light {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    box-shadow: inset 0 0  25px 25px #000;
+    background: #fff2dc;
+    z-index: 10;
+  }
+  
+.light-offo {
+    width: 150px;
+    height: 100%;
+    box-shadow: inset 0 0 150px 250px #fff2dc !important;
+  }
+
+.pogi {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.pogi h1 {
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    text-align: center;
+  }
+.pogi h2 {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    right: 30%;
+    text-align: center;
+
+  }
+
+#nextButton {
+  font-size: 96px;
+}
+
+#bottomBarMenu {
+    width: 100%;
+    /* position: absolute;
+    top: 93%; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1%;
+  }
+
+#bottomBarMenu a {
+    color:#000;
+    font-size: 16px;
+}
+
+#footerLine{
+    /* position: absolute;
+    bottom: 0; */
+    width: 100%;
+}
+
