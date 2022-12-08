@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/home.css">
     <script src="../javascript/home.js" type="text/javascript" defer></script>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <title>Letsgooo</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Experience</title>
 </head>
 
 <body>
@@ -14,65 +23,65 @@
         <hr>
     </header>
 
-    <div id="topElements">
-        <div class="titleText" id="titleText">
-            <p>Choose <br> your <br> experience.</p>
-        </div>
-        <div class="menuButtons">
+        <div id="topElements">
+            <heading>
+                <div class="titleText">
+                    <p>Choose <br> your <br> experience.</p>
+                </div>
+            </heading>
+
+            <div class="menuButtons">
                 <div id="presbyopia">
                     <button type="button" class="buttons" onclick='movePage2()'> PRESBYOPIA </button>   </a> 
                 </div>
-            <div id="diabeticRetinopathy">
-                <button type="button" class="buttons" onclick='movePage2()'> DIABETIC RETINOPATHY </button>
+                <div id="diabeticRetinopathy">
+                    <button type="button" class="buttons" onclick='movePage2()'> DIABETIC RETINOPATHY </button>
+                </div>
+                <div id="macularDegeneration">
+                    <button type="button" class="buttons" onclick='movePage2()'> MACULAR DEGENERATION </button> 
+                </div>
+            </div>       
+        </div>
+
+        <br>
+
+        <div id="explanationText">
+            <div id="expText">
+                <p> You can learn more about each impairment after each short experience. Feel free to click on any of the words.</p>
             </div>
-            <div id="macularDegeneration">
-                <button type="button" class="buttons" onclick='movePage2()'> MACULAR DEGENERATION </button> 
+            <div id="byMe">
+                <p> ______________ from me! </p>
             </div>
         </div>
-    </div>
 
-    <br>
+        <br>
 
-    <div id="explanationText">
-        <div id="expText">
-            <p> You can learn more about each impairment after each short experience. Feel free to click on any of the words.</p>
+        <div id="eyeImage">
+            <img id="eye" src="../assets/eye.png"  alt="illustration of an eye"/> 
         </div>
-        <div id="byMe">
-            <p> ______________ from me! </p>
-        </div>
-    </div>
-
-    <br>
-
-    <img id="eye" src="../assets/eye.png" width= "185" height="87" alt="illustration of an eye"/> 
-
-    <div id="bottomElements">
-        <div class="menuButtons">
-            <div id="cataract">
-                <button class="buttons" onclick='movePage2()'> CATARACT </button>
-            </div>
-            <div id="tunnelVision">
-                <button class="buttons" onclick="movePage()"> TUNNEL VISION </button>
-            </div>
-            <div id="centralVisionLoss">
-                <button class="buttons" onclick="movePage2()"> CENTRAL VISION LOSS</button>
-            </div>
-            <div id="glaucoma">
-                <button class="buttons" onclick="movePage2()"> GLAUCOMA </button>
-            </div>
-            <div id="totalBlindness">
-                <button class="buttons" onclick="movePage2()"> TOTAL BLINDNESS </button>
+        
+        <div id="bottomElements">
+            <div class="menuButtons">
+                <div id="cataract">
+                    <button class="buttons" onclick='movePage2()'> CATARACT </button>
+                </div>
+                <div id="tunnelVision">
+                    <button class="buttons" onclick="movePage()"> TUNNEL VISION </button>
+                </div>
+                <div id="centralVisionLoss">
+                    <button class="buttons" onclick="movePage2()"> CENTRAL VISION LOSS</button>
+                </div>
+                <div id="glaucoma">
+                    <button class="buttons" onclick="movePage2()"> GLAUCOMA </button>
+                </div>
+                <div id="totalBlindness">
+                    <button class="buttons" onclick="movePage2()"> TOTAL BLINDNESS </button>
+                </div>
             </div>
         </div>
-    </div>
-   
+
     <hr id="bottomLine">
 
-
-
-
-
-
-
 </body>
+
 </html>

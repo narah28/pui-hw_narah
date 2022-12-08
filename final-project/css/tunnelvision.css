@@ -63,15 +63,20 @@ body * {
 
 }
 
+#hintSmileyImg {
+  position: absolute;
+  right: 0;
+}
+
 .pogi h1 {
     position: absolute;
-    top: 20%;
-    right: 20%;
+    top: 25%;
+    left: 30%;
     text-align: center;
   }
 .pogi h2 {
     position: absolute;
-    top: 35%;
+    top: 50%;
     left: 20%;
     right: 30%;
     text-align: center;

@@ -9,29 +9,26 @@ html {
     position: relative;
 }
 
-.titleText {
-    font-size: 64px;
-    font-weight: bold;
-    line-height: 1.5;
-    margin-top: 5pt;
-}
-
 #topElements, #bottomElements {
     display: flex;
     align-items: flex-start stretch;
     height: 288px;
 }
 
-#titleText {
-    flex-grow:0.5;
+.titleText {
+    font-size: 64px;
+    font-weight: bold;
+    margin-top: 5pt;
+    flex-grow:0.5
 }
 
-#titleText p {
+.titleText p {
     margin-top: 10pt;
 }
 
 .menuButtons {
     display: flex;
+    flex-direction: row;;
     justify-content: space-between;
     flex-grow: 2.5;
     margin-top: 10pt;
@@ -59,8 +56,7 @@ html {
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
-    width: 100%;
-    
+    width: 100%;   
 }
 
 .buttons:hover {
@@ -89,6 +85,8 @@ html {
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
+    width: 185px;
+    height: 87px;
 }
 
 #bottomElements {
@@ -120,4 +118,76 @@ html {
     transform: rotate(20deg);
     margin-left: 30px;
     margin-bottom: 45px;
+}
+
+
+/* for resposive design */
+
+@media only screen and (max-width: 600px) {
+
+    /* hiding the explanation texts*/
+    #explanationText {
+        display: none;
+    }
+
+    #homeContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titleText {
+        font-size: 50px;
+        font-weight: bold;
+        margin-top: 5pt;
+        flex-grow:0.5
+    }
+
+    #topElements, #bottomElements {
+        display: flex;
+        align-items: flex-start stretch;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    #bottomElements {
+        margin-top: 60%;
+    }
+
+    .menuButtons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #presbyopia,#diabeticRetinopathy,#macularDegeneration {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    img, #bottomLine {
+        display: none !important;
+    }
+
+    #bottomLine {
+        margin: 0;
+        position: absolute;
+    }
+    
+    #totalBlindness {
+        margin-bottom: 10%;
+    }
+
+/* "un"rotating the rotated elements  */
+    #cataract {
+        transform: rotate(0);
+        width: 100%;
+        margin: 0;
+    }
+    
+    #totalBlindness button {
+        transform: rotate(0);
+        width:100%;
+        margin: 0;
+    }
 }

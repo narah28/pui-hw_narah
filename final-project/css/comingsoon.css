@@ -11,12 +11,19 @@ html, body {
     background-color: #000;
 }
 
-#comeBackLater {
-    font-size: 24px;
-    font-weight: bolder;
-    line-height: 1.2;
-    text-align: center;
-    margin-top: 0;
+#backButton{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+#backButton a {
+    color:#FFFAF2;
+    font-size: 30pt;
+}
+
+#backButton a:visited {
+    color:#FFFAF2;
+    font-size: 30pt;
 }
 
 #comingSoonContainer {
@@ -28,6 +35,14 @@ html, body {
 #stackImage img {
     width: 100%;
     margin-top: 8%
+}
+
+#comeBackLater {
+    font-size: 24px;
+    font-weight: bolder;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 0;
 }
 
 #redirectButton {
@@ -43,8 +58,7 @@ html, body {
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
-    width: 100%;
-    
+    width: 100%;    
 }
 
 #redirectButton:hover {
