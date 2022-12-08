@@ -57,9 +57,12 @@ html {
     margin-top: 10px;
 }
 
+/* for the far left side of bottom half */
 #tvBottomElements {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3%;
 }
 
 
@@ -67,10 +70,10 @@ html {
     display: flex;
     flex-direction: column;
     line-height: 1.5;
+    width: 30%;
 }
 
 #occurence {
-    width: 16%;
     font-size: 42px;
     font-weight: bolder;
     margin-top: 0;
@@ -80,10 +83,19 @@ html {
     margin-top: 0;
 }
 
-/* medical diagnosis required part */
+/* medical diagnosis required & could be chronic or temporary part */
 
+.diagnosis, .duration {
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: lighter;
+    width: 30%;
+}
 
-
+#diagnosisTitle {
+    font-size: 20px;
+    font-weight: bold;
+}
 
 /* for the bottom navigation bar */
 
@@ -91,7 +103,7 @@ html {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1%;
+    margin-bottom: 0;
   }
 
 #bottomBarMenu a {
