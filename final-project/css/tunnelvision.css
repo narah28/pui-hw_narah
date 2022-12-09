@@ -23,8 +23,16 @@ body * {
     user-select: none;
   }
   
+#light {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  box-shadow: inset 0 0  25px 25px #000;
+  background: #fff2dc;
+  z-index: 10;
+}
+
 #content {
-    /* width: 100%; */
     height: 100vh;
     margin-left: 2%;
     margin-right: 2%;
@@ -32,16 +40,8 @@ body * {
     flex-direction: row;
     align-items: flex-end;
   }
-  
-#light {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    box-shadow: inset 0 0  25px 25px #000;
-    background: #fff2dc;
-    z-index: 10;
-  }
-  
+
+/*this is for when you click within the page. The light mouse will disappear. */
 .light-off {
     width: 150px;
     height: 100%;
@@ -60,7 +60,6 @@ body * {
   bottom: 30%;
   top:0;
   left: 0;
-
 }
 
 #hintSmileyImg {
@@ -68,29 +67,29 @@ body * {
   right: 0;
 }
 
+/* for the text behind the black screen */
 .pogi h1 {
     position: absolute;
     top: 18%;
     left: 30%;
     text-align: center;
   }
+
 .pogi h2 {
     position: absolute;
     top: 50%;
     left: 20%;
     right: 30%;
     text-align: center;
-
   }
-
+/* the arrow button that leads users to the next page */
 #nextButton {
   font-size: 96px;
 }
 
+/* bottom navigation bar menu */
 #bottomBarMenu {
     width: 100%;
-    /* position: absolute;
-    top: 93%; */
     display: flex;
     justify-content: space-between;
     margin-bottom: 1%;
@@ -101,9 +100,8 @@ body * {
     font-size: 16px;
 }
 
+/* bottom line */
 #footerLine{
-    /* position: absolute;
-    bottom: 0; */
     width: 100%;
 }
 
