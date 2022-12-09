@@ -9,12 +9,22 @@ html {
     position: relative;
 }
 
+/* for the top and bottom menu buttons */
 #topElements, #bottomElements {
     display: flex;
     align-items: flex-start stretch;
     height: 288px;
 }
 
+.menuButtons {
+    display: flex;
+    flex-direction: row;;
+    justify-content: space-between;
+    flex-grow: 2.5;
+    margin-top: 10pt;
+}
+
+/* for the title text "Choose your experience" */
 .titleText {
     font-size: 64px;
     font-weight: bold;
@@ -26,14 +36,7 @@ html {
     margin-top: 10pt;
 }
 
-.menuButtons {
-    display: flex;
-    flex-direction: row;;
-    justify-content: space-between;
-    flex-grow: 2.5;
-    margin-top: 10pt;
-}
-
+/* just for the top menu buttons */
 #presbyopia,#diabeticRetinopathy,#macularDegeneration {
     flex-grow: 1;
     flex-basis: 33%;
@@ -43,6 +46,7 @@ html {
     justify-content: center;
 }
 
+/* for all the menu buttons - specific styling & hover effect */
 .buttons {
     border: solid #FFFAF2 1px;
     background-color: black;
@@ -64,6 +68,7 @@ html {
     color: black;
 }
 
+/* for the explanation text section below the title "You can learn..." */
 #explanationText {
     display: flex;
     justify-content: flex-start;
@@ -80,6 +85,7 @@ html {
     margin-bottom: 3px;
 }
 
+/* for the eye illlustration image */
 #eye {
     display: block;
     margin-left: auto;
@@ -89,6 +95,7 @@ html {
     height: 87px;
 }
 
+/* just for the bottom menu buttons */
 #bottomElements {
     width: 100%;
     display: flex;
@@ -104,11 +111,7 @@ html {
     margin: 2px;
 }
 
-#bottomLine {
-    margin: 0;
-}
-
-/* for the rotated elements */
+/* for the rotated elements at the bottom */
 #cataract {
     transform: rotate(-20deg);
     margin-right: 30px;
@@ -120,10 +123,12 @@ html {
     margin-bottom: 45px;
 }
 
+/* for the bottom line */
+#bottomLine {
+    margin: 0;
+}
 
-
-
-/* for resposive design */
+/* -----------------------------responsive design--------------------------------- */
 
 @media only screen and (max-width: 600px) {
 
